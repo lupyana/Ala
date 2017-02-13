@@ -1,2 +1,2 @@
 # Gita
-Platform to help spead musical Literature based on African Songs via the web
+Platform to help spread and share musical Literature of African songs.
