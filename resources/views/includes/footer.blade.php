@@ -28,10 +28,9 @@
     </div>
   </div>
 </footer>
-
-
-
-</body>
 <script src="{{ asset('assets/jquery/dist/jquery.js') }}"></script>
 <script src="{{ asset('assets/materialize/dist/js/materialize.js') }}"></script>
 <script src="{{ asset('js/init.js') }}"></script>
+
+
+</body>

@@ -6,7 +6,7 @@ Artists
 
 @section('content')
 <div class="row">
-  <div class=" col s6 offset-s3">
+  <div class="col s12 m6 l6 offset-m3  offset-l3">
 
     <ul class="collection with-header">
           <li class="collection-header"><h4>Artist Names Names</h4></li>
