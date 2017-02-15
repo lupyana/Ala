@@ -13,4 +13,8 @@
 
 Route::get('/', function () {
     return view('pages.home');
-});
+})->name('home');
+
+Route::get('/Artists', function () {
+    return view('pages.viewartists');
+})->name('allArtists');
