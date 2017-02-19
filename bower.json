@@ -4,7 +4,7 @@
   "title": "Gita Music Literature Library",
   "description": "Platform to help spread and share musical Literature of African songs.",
   "dependencies": {
-    "materialize": "^0.98.0",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
   }
 }

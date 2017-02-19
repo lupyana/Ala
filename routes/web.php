@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/Artists', function () {
     return view('pages.viewartists');
 })->name('allArtists');
+
+Auth::routes();
+
+Route::get('/', 'HomeController@index');
