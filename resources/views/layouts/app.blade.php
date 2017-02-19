@@ -8,11 +8,17 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- fav icon -->
 
+    <link rel="shortcut icon" href="{{ asset('gita.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('gita.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('gita.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('gita.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ asset('gita.png') }}">
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -36,7 +42,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name') }}
                     </a>
                 </div>
 
@@ -82,6 +88,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
