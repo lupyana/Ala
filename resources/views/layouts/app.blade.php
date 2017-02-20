@@ -12,16 +12,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!-- fav icon -->
-<!--
-    <link rel="shortcut icon" href="{{ asset('gita.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ asset('gita.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ asset('gita.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ asset('gita.png') }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ asset('gita.png') }}">
-    -->
 
-    
+    <!-- fav icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" href="{{ asset('favicon-32x32.png') }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ asset('favicon-16x16.png') }}" sizes="16x16">
