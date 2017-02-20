@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/master.css') }}" rel="stylesheet">
 
     <!-- fav icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
@@ -20,17 +21,7 @@
     <link rel="manifest" href="{{ asset('manifest.json') }}">
     <link rel="mask-icon" href="{{ asset('safari-pinned-tab.svg') }}" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-
-    <style media="screen">
-      .sogea{
-        margin-top: 15%;
-          margin-bottom:  15%;
-      }
-
-      .space{
-        padding: 30px 0;
-      }
-    </style>
+>
 
     <!-- Scripts -->
     <script>
@@ -108,5 +99,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+      <script src="{{ asset('js/master.js') }}"></script>
 </body>
 </html>
