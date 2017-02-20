@@ -7,7 +7,7 @@
           <div class="input-group sogea">
        <input type="text" class="form-control" placeholder="Search for by Song or Artist">
        <span class="input-group-btn">
-         <button class="btn btn-default" type="button">Search</button>
+        <a href="{{ route('bla') }}"> <button class="btn btn-default" type="button">Search</button></a>
        </span>
      </div><!-- /input-group -->
         </div>
@@ -46,6 +46,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
           </div>
         </div>
       </section>
-      
+
 </div>
 @endsection
