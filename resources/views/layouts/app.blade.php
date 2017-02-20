@@ -21,6 +21,17 @@
     <link rel="mask-icon" href="{{ asset('safari-pinned-tab.svg') }}" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
+    <style media="screen">
+      .sogea{
+        margin-top: 15%;
+          margin-bottom:  15%;
+      }
+
+      .space{
+        padding: 30px 0;
+      }
+    </style>
+
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -88,6 +99,12 @@
 
         @yield('content')
     </div>
+
+    <footer>
+        <div class="container text-center">
+                Gita &copy; <?php echo date('Y');  ?>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
