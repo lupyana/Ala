@@ -24,6 +24,6 @@ Route::get('/searchResults', function(){
 })->name('search');
 
 
-Route::get('/requestLesson', function(){
-  return view('pages.lessonRequest');
-})->name('requestLesson');
+Route::get('/submitLesson', function(){
+  return view('pages.lessonSubmit');
+})->name('submitLesson');
