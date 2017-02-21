@@ -6,3 +6,24 @@
 .space{
   padding: 30px 0;
 }
+
+
+ul li{
+  list-style: none;
+}
+
+.input-space{
+  margin: 15px 0;
+}
+
+.fix-size{
+
+}
+
+.no-padding{
+  padding: 0;
+}
+
+.no-padding table{
+  margin-bottom: 0;
+}

@@ -20,5 +20,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/searchResults', function(){
-  return view('results');
-})->name('bla');
+  return view('pages.results');
+})->name('search');
+
+
+Route::get('/requestLesson', function(){
+  return view('pages.lessonRequest');
+})->name('requestLesson');
