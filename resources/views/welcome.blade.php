@@ -4,12 +4,15 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <div class="input-group sogea">
-       <input type="text" class="form-control" placeholder="Search for by Song or Artist">
-       <span class="input-group-btn">
-        <a href="{{ route('search') }}"> <button class="btn btn-default" type="button">Search</button></a>
-       </span>
-     </div><!-- /input-group -->
+          <form class="" action="{{ route('search') }}" method="post">
+                <div class="input-group sogea">
+             <input type="text" class="form-control" name="strquery" placeholder="Search for by Song or Artist" required>
+              <input type="hidden" name="_token" value="{{ csrf_token() }}">
+             <span class="input-group-btn">
+               <button class="btn btn-default" type="submit">Search</button>
+             </span>
+           </div><!-- /input-group -->
+         </form>
         </div>
     </div>
 

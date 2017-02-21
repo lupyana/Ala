@@ -19,9 +19,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/searchResults', function(){
-  return view('pages.results');
-})->name('search');
+// Route::get('/searchResults', function(){
+//   return view('pages.results');
+// })->name('search');
+
+Route::post('/searchResults', [
+    'uses' => 'searchController@userSearch',
+    'as'   => 'search'
+]);
 
 
 Route::get('/submitLesson', function(){
