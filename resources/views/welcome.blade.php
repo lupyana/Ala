@@ -146,7 +146,7 @@
           </div>
           <div class="col-lg-4">
             <ul>
-              <a href="#"><li>Request a Lesson or Tabs</li></a>
+              <a href="{{ route('requestLesson') }}"><li>Request a Lesson or Tabs</li></a>
             <!-- <a href="#">  <li>Submit a Tab</li></a> -->
               <a href="{{ route('submitLesson') }}"><li>Submit a Lesson</li></a>
             </ul>
