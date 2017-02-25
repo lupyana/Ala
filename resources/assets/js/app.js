@@ -5,7 +5,10 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require('./bootstrap')
+require('owl.carousel')
+// require('./chord/raphael');
+// require('./chord/raphael.chord');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -14,6 +17,7 @@ require('./bootstrap');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('chords', require('./components/Chords.vue'));
 
 const app = new Vue({
     el: '#app'
