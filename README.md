@@ -7,7 +7,7 @@ Platform to help spread and share musical Literature of African songs.
 
 - [composer](https://getcomposer.org/)
 - [laravel](https://www.laravel.com/docs/5.3/installation): >= 5.3
-- [yarn](https://yarnpkg.com/en/docs/install) (Optinal)
+- [yarn](https://yarnpkg.com/en/docs/install) (Optional)
 
 ### Getting started
 
