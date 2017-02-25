@@ -7,6 +7,16 @@
   padding: 30px 0;
 }
 
+.separate{
+  margin-bottom: 25px;
+}
+
+.darkhead{
+    color: #333;
+    background-color: #f5f5f5 ;
+    border-color: #ddd;
+
+}
 
 ul li{
   list-style: none;
@@ -26,4 +36,14 @@ ul li{
 
 .no-padding table{
   margin-bottom: 0;
+}
+.no-padding .list-group{
+  margin-bottom: 0;
+}
+
+.no-radius{
+  border-radius: 0px;
+}
+.list-group-item:first-child {
+    border-radius: 0;
 }

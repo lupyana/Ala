@@ -36,3 +36,8 @@ Route::get('/requestLesson', function(){
 Route::get('/submitLesson', function(){
   return view('pages.lessonSubmit');
 })->name('submitLesson');
+
+Route::get('/viewChords', [
+    'uses' => 'contentController@getChords',
+    'as'   => 'viewChords'
+]);

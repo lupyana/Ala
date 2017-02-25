@@ -27,33 +27,13 @@
             <h3 class="panel-title">Recently Added</h3>
           </div>
           <div class="panel-body no-padding">
-            <table class="table table-striped table-hover">
-              <tr>
-                <td >
-                  Some Song- Some guy
-                </td>
-              </tr>
-              <tr>
-                  <td >
-                    Some Song- Some guy
-                  </td>
-              </tr>
-              <tr>
-                <td >
-                Some Song- Some guy
-                </td>
-              </tr>
-              <tr>
-                <td >
-                Some Song- Some guy
-                </td>
-              </tr>
-              <tr>
-                <td >
-                Some Song- Some guy
-                </td>
-              </tr>
-            </table>
+            <div class="list-group ">
+                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+              </div>
           </div>
         </div>
 
@@ -66,33 +46,13 @@
             <h3 class="panel-title">Top Views</h3>
           </div>
           <div class="panel-body no-padding">
-            <table class="table table-striped table-hover">
-              <tr>
-                <td >
-                  Some Song- Some guy
-                </td>
-              </tr>
-              <tr>
-                  <td >
-                    Some Song- Some guy
-                  </td>
-              </tr>
-              <tr>
-                <td >
-                Some Song- Some guy
-                </td>
-              </tr>
-              <tr>
-                <td >
-                Some Song- Some guy
-                </td>
-              </tr>
-              <tr>
-                <td >
-                Some Song- Some guy
-                </td>
-              </tr>
-            </table>
+            <div classss="list-group ">
+                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+              </div>
           </div>
         </div>
 
@@ -104,34 +64,15 @@
           <div class="panel-heading">
             <h3 class="panel-title">Learn to play</h3>
           </div>
-          <div class="panel-body no-padding">
-            <table class="table table-hover">
-              <tr>
-                <td >
-                  Chord Diagrams
-                </td>
-              </tr>
-              <tr>
-                  <td >
-                Musical Scales
-                  </td>
-              </tr>
-              <tr>
-                <td >
-                  Tips
-                </td>
-              </tr>
-              <tr>
-                <td >
-                  Music Theory
-                </td>
-              </tr>
-              <tr>
-                <td >
-                Find a teacher
-                </td>
-              </tr>
-            </table>
+          <div class="panel-body no-padding ">
+            <div class="list-group ">
+                <a href="{{ route('viewChords') }}" class="list-group-item">Chord Diagrams</a>
+                <a href="#" class="list-group-item">Musical Scales</a>
+                <a href="#" class="list-group-item">Tips</a>
+                <a href="#" class="list-group-item">Music Theory</a>
+                <a href="#" class="list-group-item">Find a teacher</a>
+              </div>
+
           </div>
         </div>
 
