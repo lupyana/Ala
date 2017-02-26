@@ -15,93 +15,70 @@ class ChordsTableSeeder extends Seeder
 
       $chords =[
           [
-            'name' => 'A',
-            'version' => '1',
-            'diagram' => '',
-            'instrument' => 'Guitar',
-            'desctription' => ''
+            'name' => 'A'
+
           ],
           [
-            'name' => 'A#',
-            'version' => '1',
-            'diagram' => '',
-            'instrument' => 'Guitar',
-            'desctription' => ''
+            'name' => 'B'
+
           ],
           [
-            'name' => 'B',
-            'version' => '1',
-            'diagram' => '',
-            'instrument' => 'Guitar',
-            'desctription' => ''
+            'name' => 'C'
+
           ],
           [
-            'name' => 'C',
-            'version' => '1',
-            'diagram' => '',
-            'instrument' => 'Guitar',
-            'desctription' => ''
-          ],
-          [
-              'name' => 'C#',
-              'version' => '1',
-              'diagram' => '',
-              'instrument' => 'Guitar',
-              'desctription' => ''
-            ],
-          [
-            'name' => 'D',
-            'version' => '1',
-            'diagram' => '',
-            'instrument' => 'Guitar',
-            'desctription' => ''
-          ],
-          [
-              'name' => 'D#',
-              'version' => '1',
-              'diagram' => '',
-              'instrument' => 'Guitar',
-              'desctription' => ''
-            ],
-           [
-              'name' => 'E',
-              'version' => '1',
-              'diagram' => '',
-              'instrument' => 'Guitar',
-              'desctription' => ''
-            ],
-            [
-              'name' => 'F',
-              'version' => '1',
-              'diagram' => '',
-              'instrument' => 'Guitar',
-              'desctription' => ''
-            ],
-            [
-                'name' => 'F#',
-                'version' => '1',
-                'diagram' => '',
-                'instrument' => 'Guitar',
-                'desctription' => ''
-              ],
-            [
-              'name' => 'G',
-              'version' => '1',
-              'diagram' => '',
-              'instrument' => 'Guitar',
-              'desctription' => ''
-            ],
-             [
-                'name' => 'G#',
-                'version' => '1',
-                'diagram' => '',
-                'instrument' => 'Guitar',
-                'desctription' => ''
-              ]
+            'name' => 'D'
+
+          ]
+
 
         ];
+
+        $types =[
+            [
+              'name' => 'Major',
+              'intervals' => '1 - 3 - 5',
+              'notes' => '',
+              'othernames' => '',
+              'instrument' => 'Guitar'
+
+            ],
+            [
+              'name' => 'Minor',
+              'intervals' => '1 - b3 - 5',
+              'notes' => '',
+              'othernames' => '',
+              'instrument' => 'Guitar'
+
+            ],
+            [
+              'name' => 'Major 7',
+              'intervals' => '1 - 3 - 5 - 7',
+              'notes' => '',
+              'othernames' => '',
+              'instrument' => 'Guitar'
+            ],
+            [
+              'name' => 'Minor 7',
+              'intervals' => '1 - b3 - 5 - b7',
+              'notes' => '',
+              'othernames' => '',
+              'instrument' => 'Guitar'
+
+            ]
+
+
+          ];
+
+      s
         foreach($chords as $chord){
-            Chord::create($chord);
+            $c = Chord::create($chord);
+            // $c = new ChordType();
+            foreach($types as $type){
+                $c->chordtypes()->create($type);
+            }
+
+
         }
         // Chord::insert($chords);
     }
