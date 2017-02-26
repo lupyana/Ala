@@ -70,7 +70,6 @@ class ChordsTableSeeder extends Seeder
 
           ];
 
-      s
         foreach($chords as $chord){
             $c = Chord::create($chord);
             // $c = new ChordType();

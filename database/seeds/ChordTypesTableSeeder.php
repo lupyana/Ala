@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\ChordType;
+
 class ChordTypesTableSeeder extends Seeder
 {
     /**
@@ -13,11 +14,11 @@ class ChordTypesTableSeeder extends Seeder
     {
         $chorddetails = [
           [
-          'notes' => ' A - C# - E',
+          'notes' => 'A - C# - E',
           'othernames' => 'A - A Major - Amaj'
         ],
           [
-          'notes' => ' A - C - E',
+          'notes' => 'A - C - E',
           'othernames' => 'Am - A Minor - Amin'
         ],
           [
@@ -34,7 +35,7 @@ class ChordTypesTableSeeder extends Seeder
             'othernames' => 'B - B Major - Bmaj'
           ],
             [
-            'notes' => ' B - D - F',
+            'notes' => 'B - D - F',
             'othernames' => 'Bm - B Minor - Bmin'
           ],
             [
@@ -47,11 +48,11 @@ class ChordTypesTableSeeder extends Seeder
           ],
 
           [
-          'notes' => ' C - E - G',
+          'notes' => 'C - E - G',
           'othernames' => 'C - C Major - Cmaj'
         ],
           [
-          'notes' => ' C - D# - G',
+          'notes' => 'C - D# - G',
           'othernames' => 'Cm - C Minor - Cmin'
         ],
           [
@@ -68,7 +69,7 @@ class ChordTypesTableSeeder extends Seeder
           'othernames' => 'D - D Major - Dmaj'
         ],
           [
-          'notes' => ' D - F - A',
+          'notes' => 'D - F - A',
           'othernames' => 'Dm - D Minor - Dmin'
         ],
           [
@@ -81,13 +82,13 @@ class ChordTypesTableSeeder extends Seeder
           ],
 
         ];
-      $s = [ 'a','a','a','a','a','a','a','a','a','a','a','a','a','a','a','a'];
-      foreach ($s as $ss) {
-      $c = ChordType::updateOrCreate(['notes' =>$ss ]);
-      }
+          $chords = ChordType::get();
+            $i = 0;
+          foreach ($chords as $chord){
+              $chord->update( ['notes' => $chorddetails[$i]['notes'] , 'othernames' => $chorddetails[$i]['othernames']] );
+              $i++;
+          }
 
-        // foreach($chorddetails as $chorddetail){
-        //     $c = ChordType::updateOrCreate($chorddetail);
-        //   }
+
     }
 }
