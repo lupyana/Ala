@@ -9,7 +9,7 @@
              <input type="text" class="form-control" name="strquery" placeholder="Search for by Song or Artist" required>
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
              <span class="input-group-btn">
-               <button class="btn btn-default" type="submit">Search</button>
+               <button id="main-search" class="btn btn-default" type="submit"></button>
              </span>
            </div><!-- /input-group -->
          </form>

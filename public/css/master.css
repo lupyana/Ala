@@ -47,3 +47,21 @@ ul li{
 .list-group-item:first-child {
     border-radius: 0;
 }
+/* Bootstrap tweaks */
+.form-control{
+    border-radius: 0px !important;
+}
+.btn{
+    border-radius: 0px !important;
+}
+.panel{
+    border-radius: 0px !important;
+}
+.navbar-toggle{
+    border-radius: 0px !important;
+}
+#main-search{
+    background: url("http://127.0.0.1:8000/main-search.png");
+    height:36px;
+    width:36px;
+}
