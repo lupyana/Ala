@@ -9,8 +9,8 @@ class contentController extends Controller
 {
     public function getChords(){
 
-      $chords=  Chord::get();
+      $chords=  Chord::with('chordtypes')->get();
 
-      return view('pages.allChords')->with([ 'chordnames' => $chords->pluck('name') ]);
+      return view('pages.allChords')->with([ 'chords' => $chords ]);
     }
 }

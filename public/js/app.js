@@ -12140,13 +12140,6 @@ module.exports = function spread(callback) {
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = {
     mounted: function mounted() {
@@ -35049,14 +35042,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_c('div', {
-    staticClass: "panel panel-default"
-  }, [_c('div', {
-    staticClass: "panel-heading darkhead"
-  }, [_c('h3', {
-    staticClass: "panel-title "
-  }, [_vm._v("Desctiption")])]), _vm._v(" "), _c('div', {
-    staticClass: "panel-body"
-  }, [_vm._v("\n    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n    ")])]), _vm._v(" "), _c('div', {
     staticClass: "panel panel-default"
   }, [_c('div', {
     staticClass: "panel-heading"

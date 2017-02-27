@@ -1,4 +1,4 @@
-<?php
+  <?php
 
 use Illuminate\Database\Seeder;
 use App\Chord;
@@ -28,6 +28,18 @@ class ChordsTableSeeder extends Seeder
           ],
           [
             'name' => 'D'
+
+          ],
+          [
+            'name' => 'E'
+
+          ],
+          [
+            'name' => 'F'
+
+          ],
+          [
+            'name' => 'G'
 
           ]
 
