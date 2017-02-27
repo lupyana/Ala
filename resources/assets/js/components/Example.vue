@@ -25,6 +25,7 @@
             </div>
             <div id="div5">
             </div>
+
           </div>
         </div>
     </div>
@@ -44,11 +45,11 @@
                     nav:true
                 },
                 600:{
-                    items:3,
+                    items:2,
                     nav:false
                 },
                 1000:{
-                    items:3,
+                    items:2,
                     nav:true,
                     loop:false
                 }
@@ -56,10 +57,10 @@
           });
             console.log('Component mounted.')
             Raphael.chord('div1', 'A maj', 1).element.setSize(300, 300)
-            Raphael.chord('div2', 'A maj', 2).element.setSize(300, 300)
-            Raphael.chord('div3', 'A maj', 3).element.setSize(300, 300)
-            Raphael.chord('div4', 'A maj', 4).element.setSize(300, 300)
-            Raphael.chord('div5', 'A maj', 4).element.setSize(300, 300)
+            Raphael.chord('div2', 'A maj', 3).element.setSize(300, 300)
+            Raphael.chord('div3', 'A maj', 7).element.setSize(300, 300)
+            Raphael.chord('div4', 'A maj', 5).element.setSize(300, 300)
+            Raphael.chord('div5', 'A maj', 2).element.setSize(300, 300)
 
 
         }

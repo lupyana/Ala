@@ -23,12 +23,12 @@
           </div>
           <div class="panel-body">
             <ul class="nav nav-pills nav-stacked">
-              <li>   <p class='lead'>Major</p></li>
-              <li>   <p class='lead'>Minor</p></li>
-              <li>   <p class='lead'>Major 7</p></li>
-              <li>   <p class='lead'>Major 9</p></li>
-              <li>   <p class='lead'>Minor 7</p></li>
-              <li>   <p class='lead'>Minor 9</p></li>
+              <a href="#"><li>   <p class='lead'>Major</p></li></a>
+              <a href="#">  <li>   <p class='lead'>Minor</p></li></a>
+              <a href="#">  <li>   <p class='lead'>Major 7</p></li></a>
+              <a href="#">  <li>   <p class='lead'>Major 9</p></li></a>
+              <a href="#">  <li>   <p class='lead'>Minor 7</p></li></a>
+            <a href="#">    <li>   <p class='lead'>Minor 9</p></li></a>
 
             </ul>
           </div>
