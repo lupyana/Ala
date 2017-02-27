@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateChordsTable extends Migration
+class CreateChordTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,16 @@ class CreateChordsTable extends Migration
      */
     public function up()
     {
-        Schema::create('chords', function (Blueprint $table) {
+        Schema::create('chord_types', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('name');
+            $table->integer('chord_id')->unsigned()->index();
+            $table->string('notes');
+            $table->string('intervals');
+            $table->string('othernames');
+            $table->string('instrument');
+            $table->foreign('chord_id')->references('id')->on('chords')->onDelete('cascade');
         });
     }
 
@@ -27,6 +33,6 @@ class CreateChordsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('chords');
+        Schema::dropIfExists('chord_types');
     }
 }
