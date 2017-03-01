@@ -15,7 +15,7 @@
     "vue": "^2.1.10"
   },
   "name": "gita",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Platform to help spread and share musical Literature of African songs.",
   "main": "index.js",
   "repository": "https://github.com/lupyana/Gita.git",
