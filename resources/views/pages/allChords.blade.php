@@ -23,12 +23,12 @@
           </div>
           <div class="panel-body">
             <ul class="nav nav-pills nav-stacked">
-              <a href="#">  <li>   <p class='lead'>Major</p></li></a>
-              <a href="#">  <li>   <p class='lead'>Minor</p></li></a>
-              <a href="#">  <li>   <p class='lead'>Major 7</p></li></a>
-              <a href="#">  <li>   <p class='lead'>Major 9</p></li></a>
-              <a href="#">  <li>   <p class='lead'>Minor 7</p></li></a>
-            <a href="#">    <li>   <p class='lead'>Minor 9</p></li></a>
+              <a href="#" v-on:click="say('major')">  <li>   <p class='lead'>Major</p></li></a>
+              <a href="#" v-on:click="say('minor')">  <li>   <p class='lead'>Minor</p></li></a>
+              <a href="#" v-on:click="say('major 7')">  <li>   <p class='lead'>Major 7</p></li></a>
+              <a href="#" v-on:click="say('major 9')">  <li>   <p class='lead'>Major 9</p></li></a>
+              <a href="#" v-on:click="say('minor 7')">  <li>   <p class='lead'>Minor 7</p></li></a>
+            <a href="#" v-on:click="say('minor 9')">    <li>   <p class='lead'>Minor 9</p></li></a>
 
             </ul>
           </div>

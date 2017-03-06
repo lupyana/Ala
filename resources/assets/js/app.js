@@ -20,5 +20,10 @@ Vue.component('example', require('./components/Example.vue'));
 Vue.component('chords', require('./components/Chords.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    methods: {
+   say: function (message) {
+     alert(message)
+   }
+ }
 });
