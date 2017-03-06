@@ -32,6 +32,6 @@ class UserActivation
             'status' => 0
         ]);
 
-        $event->user->notify(new \App\Notifications\activationEmail($UserToken));
+        $event->user->notify(new \App\Notifications\Mail\activationEmail($UserToken));
     }
 }

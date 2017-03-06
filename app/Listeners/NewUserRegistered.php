@@ -27,6 +27,6 @@ class NewUserRegistered
     public function handle(Registered $event)
     {
         // dd($event);/
-        $event->user->notify(new \App\Notifications\welcomeEmail());
+        $event->user->notify(new \App\Notifications\Mail\welcomeEmail());
     }
 }
