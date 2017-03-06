@@ -300,6 +300,7 @@ class ComposerStaticInitf7919d07b9ef8cbd7fea49ea93ddc973
         'CreateGenresTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_21_215129_create_genres_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateScalesTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_25_081349_create_scales_table.php',
+        'CreateUserTokensTable' => __DIR__ . '/../..' . '/database/migrations/2017_03_06_134440_create_user_tokens_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',

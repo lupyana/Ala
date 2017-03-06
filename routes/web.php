@@ -41,3 +41,6 @@ Route::get('/viewChords', [
     'uses' => 'contentController@getChords',
     'as'   => 'viewChords'
 ]);
+
+
+Route::get('/account/activation/{token}' , 'accountController@activate');
