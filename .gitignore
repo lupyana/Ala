@@ -2,6 +2,9 @@
 /public/storage
 /public/hot
 /storage/*.key
+/public/fonts/*
+/public/build/*
+/public/js/app.js
 /vendor
 /.idea
 Homestead.json
