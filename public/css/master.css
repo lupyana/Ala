@@ -106,4 +106,6 @@ ul li{
     transition: opacity .2s ease;
     border-radius: 30px;
 }
->>>>>>> develop
+p.italic {
+    font-style: italic;
+}

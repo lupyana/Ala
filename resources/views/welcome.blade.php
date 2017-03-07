@@ -29,7 +29,7 @@
           <div class="panel-body no-padding">
             <div class="list-group ">
               @foreach( $songs as $song)
-                <a href="#" class="list-group-item"><strong> {{ $song ->name }}  </strong> giby {{ $song ->artist -> name}}</a>
+                <a href="viewSong/{{ $song ->name }}" class="list-group-item"><strong> {{ $song ->name }}  </strong> giby {{ $song ->artist -> name}}</a>
                 @endforeach
               </div>
           </div>

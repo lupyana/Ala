@@ -48,8 +48,18 @@ class contentController extends Controller
        return redirect('/')->with('success' , 'Your tab has been added succesfully!');
     }
 
+    public function getSong( Request $request, $song){
+
+              $song= Song::with('artist')->where('name', '=', $song)->first();
+              if( !$song){
+                return view('errors.503');
+              }
+                return view('pages.songs.viewSong')->with([ 'song' => $song ]);
+    }
+
     public function goHome(){
        $songs = Song::with('artist')->orderBy('created_at', 'desc')->take(5)->get();
        return view('welcome')->with([ 'songs' => $songs ]);
     }
+
 }

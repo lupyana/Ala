@@ -52,7 +52,7 @@
                           <input type="text" class="form-control" placeholder="Email " aria-describedby="input_email">
                       </div>
 
-            
+
 
                     </div>
           </div>

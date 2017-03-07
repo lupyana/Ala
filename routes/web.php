@@ -50,3 +50,5 @@ Route::post('/addLesson', [
         'uses' => 'contentController@addLesson',
         'as' => 'addLesson'
 ]);
+
+Route::get('/viewSong/{songName}' , 'contentController@getSong');

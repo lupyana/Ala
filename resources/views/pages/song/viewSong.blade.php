@@ -4,59 +4,36 @@
 <div class="container">
   <div class="row separate">
     <div class="col-md-12 col-lg-12 col-sm-12">
-      <ul class="nav nav-tabs nav-justified">
-        @foreach( $chords as $chord )
-          <li role="presentation"><a href="#">{{ $chord->name }}</a></li>
+      <p class="lead"> Request a Lesson</p>
 
-          @endforeach
-           </ul>
+      <div class="panel panel-default">
+            <div class="panel-heading">Required Information:</div>
+                <div class="panel-body">
+
+                  <div class="input-group input-space">
+                      <span class="input-group-addon fix-size" id="input_artist">Artist Name  &nbsp;</span>
+                      <input type="text" class="form-control" placeholder="Name" aria-describedby="input_artist">
+                  </div>
+
+                  <div class="input-group input-space">
+                      <span class="input-group-addon fix-size" id="input_album">Album Name</span>
+                      <input type="text" class="form-control" placeholder="Album Name (Optional)" aria-describedby="input_album">
+                  </div>
+
+                  <div class="input-group input-space">
+                      <span class="input-group-addon fix-size" id="input_song">Song Name &nbsp;</span>
+                      <input type="text" class="form-control" placeholder="Song " aria-describedby="input_song">
+                  </div>
+
+
+
+                </div>
+      </div>
     </div>
   </div>
 
 
-    <div class="row">
 
-      <div class="col-lg-3">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Type</h3>
-          </div>
-          <div class="panel-body">
-            <ul class="nav nav-pills nav-stacked">
-              <a  href="#">  <li>   <p class='lead'>Major</p></li></a>
-              <a  href="#">  <li>   <p class='lead'>Minor</p></li></a>
-              <a  href="#" >  <li>   <p class='lead'>Major 7</p></li></a>
-              <a  href="#" >  <li>   <p class='lead'>Major 9</p></li></a>
-              <a  href="#" >  <li>   <p class='lead'>Minor 7</p></li></a>
-            <a  href="#" >    <li>   <p class='lead'>Minor 9</p></li></a>
-
-            </ul>
-          </div>
-        </div>
-
-
-      </div>
-
-            <div class="col-lg-9">
-              <div class="panel panel-default">
-                         <div class="panel-heading darkhead">
-                           <h3 class="panel-title ">Description</h3 >
-                         </div>
-                         <div class="panel-body">
-                           <ul>
-                             <li>  Notes :   {{ $chords[0]->chordtypes[0]->notes }}</li>
-                             <li>  Intervals:   {{ $chords[0]->chordtypes[0]->intervals }}</li>
-                             <li>  Other Names:   {{ $chords[0]->chordtypes[0]->othernames }}</li>
-                           </ul>
-
-                         </div>
-                       </div>
-              <!-- <chordtemplate></chordtemplate> -->
-              <div :is="currentComponent"></div>
-
-            </div>
-
-</div>
 
 
 @endsection
