@@ -47,4 +47,9 @@ class contentController extends Controller
           //  return $request['chords'];/
        return redirect('/')->with('success' , 'Your tab has been added succesfully!');
     }
+
+    public function goHome(){
+       $songs = Song::with('artist')->orderBy('created_at', 'desc')->take(5)->get();
+       return view('welcome')->with([ 'songs' => $songs ]);
+    }
 }

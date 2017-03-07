@@ -549,4 +549,6 @@ return array(
     'SebastianBergmann\\ResourceOperations\\ResourceOperations' => $vendorDir . '/sebastian/resource-operations/src/ResourceOperations.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
+    'artistTableSeeder' => $baseDir . '/database/seeds/artistTableSeeder.php',
+    'songsTableSeeder' => $baseDir . '/database/seeds/songsTableSeeder.php',
 );

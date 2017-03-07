@@ -45,8 +45,7 @@
 [ Verse ]
 
 
-[ Chorous ]
-            </textarea>
+[ Chorous ]</textarea>
           </div>
 
           </div>

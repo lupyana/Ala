@@ -28,11 +28,9 @@
           </div>
           <div class="panel-body no-padding">
             <div class="list-group ">
-                <a href="#" class="list-group-item">    Some Song- Some guy</a>
-                <a href="#" class="list-group-item">    Some Song- Some guy</a>
-                <a href="#" class="list-group-item">    Some Song- Some guy</a>
-                <a href="#" class="list-group-item">    Some Song- Some guy</a>
-                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+              @foreach( $songs as $song)
+                <a href="#" class="list-group-item"><strong> {{ $song ->name }}  </strong> giby {{ $song ->artist -> name}}</a>
+                @endforeach
               </div>
           </div>
         </div>

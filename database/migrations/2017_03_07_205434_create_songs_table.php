@@ -19,7 +19,7 @@ class CreateSongsTable extends Migration
             // $table->unsignedBigInteger('artistid');
             $table->string('name');
             $table->string('album')->nullable();
-            $table->string('chords');
+            $table->string('chords' , 2000);
             $table->timestamps();
         });
     }

@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [
+    'uses' => 'contentController@goHome',
+    'as'   => 'goHome'
+]);
 
 Auth::routes();
 
