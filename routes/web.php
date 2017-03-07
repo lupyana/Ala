@@ -44,3 +44,8 @@ Route::get('/viewChords', [
 
 
 Route::get('/account/activation/{token}' , 'accountController@activate');
+
+Route::post('/addLesson', [
+        'uses' => 'contentController@addLesson',
+        'as' => 'addLesson'
+]);

@@ -3,8 +3,12 @@
 @section('content')
 <div class="container">
   <div class="row">
+
+
+
     <div class="col-lg-12 col-md-12 col-sm-12">
           <p class="lead"> Request a Lesson</p>
+
           <div class="panel panel-default">
                 <div class="panel-heading">Required Information:</div>
                     <div class="panel-body">
@@ -48,7 +52,7 @@
                           <input type="text" class="form-control" placeholder="Email " aria-describedby="input_email">
                       </div>
 
-
+            
 
                     </div>
           </div>
@@ -60,9 +64,10 @@
   </div>
   <div class="row">
     <div class="  col-lg-2 col-lg-offset-10 col-md-2  col-md-offset-10  col-sm-7  col-sm-offset-5  col-xs-7 col-xs-offset-5">
-      <button type="button" class="btn btn-default">Submit</button>
+      <button type="submit" class="btn btn-default">Submit</button>
     </div>
   </div>
+
 
 </div>
 @endsection('content')

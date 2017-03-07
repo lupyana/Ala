@@ -37,3 +37,21 @@
     </div>
   </div>
 @endif
+
+@if (count($errors) > 0)
+<div class="container">
+  <div class="row center-block">
+    <div class="alert alert-message alert-danger alert-dismissible col-md-12 custom-position" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+              <ul>
+              @foreach ($errors->all() as $error)
+                  <li>  <strong class="text-capitalize text-danger">Error!</strong>{{ $error }}</li>
+              @endforeach
+          </ul>
+    </div>
+  </div>
+</div>
+
+@endif
