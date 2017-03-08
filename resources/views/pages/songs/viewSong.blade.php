@@ -14,7 +14,7 @@
                 <div class="panel-body">
 
                   <p>
-                    <pre>
+                    <pre class="standardize">
                       {{ $song->chords}}
                       </pre>
                   </p>

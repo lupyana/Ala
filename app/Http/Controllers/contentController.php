@@ -58,7 +58,7 @@ class contentController extends Controller
     }
 
     public function goHome(){
-       $songs = Song::with('artist')->orderBy('created_at', 'desc')->take(5)->get();
+       $songs = Song::with('artist')->orderBy('id', 'desc')->take(5)->get();
        return view('welcome')->with([ 'songs' => $songs ]);
     }
 

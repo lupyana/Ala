@@ -109,3 +109,8 @@ ul li{
 p.italic {
     font-style: italic;
 }
+
+.standardize{
+   background-color: transparent;
+   border: none;
+}

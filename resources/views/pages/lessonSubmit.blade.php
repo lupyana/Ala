@@ -39,13 +39,13 @@
           <div class="panel-body">
             <div class="form-group">
             <!-- <label for="comment"></label> -->
-            <textarea class="form-control" name="chords" rows="30" id="comment" required>[ Intro ]
+            <textarea class="form-control" name="chords" rows="30" id="comment" required>[ INTRO ]
 
 
-[ Verse ]
+[ VERSE ]
 
 
-[ Chorous ]</textarea>
+[ CHORUS ]</textarea>
           </div>
 
           </div>
