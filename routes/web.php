@@ -52,3 +52,11 @@ Route::post('/addLesson', [
 ]);
 
 Route::get('/viewSong/{songName}' , 'contentController@getSong');
+
+Route::get('/artists' ,[
+    'uses' => 'contentController@getArtists',
+    'as'   => 'getArtists']);
+
+Route::get('/songs' ,[
+    'uses' => 'contentController@getSongs',
+    'as'   => 'getSongs']);

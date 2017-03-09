@@ -20,6 +20,7 @@ class CreateSongsTable extends Migration
             $table->string('name');
             $table->string('album')->nullable();
             $table->text('chords' , 20000);
+            $table->integer('views')->default(0);
             $table->timestamps();
         });
     }

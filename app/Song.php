@@ -12,6 +12,6 @@ class Song extends Model
   }
 
   protected $fillable =[
-    'artistid' , 'name', 'album', 'chords'
+    'artistid' , 'name', 'album', 'chords' , 'views'
     ];
 }

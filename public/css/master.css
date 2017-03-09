@@ -1,6 +1,6 @@
 .sogea{
-  margin-top: 15%;
-    margin-bottom:  15%;
+  margin-top: 10%;
+  margin-bottom:  10%;
 }
 
 .space{
@@ -46,6 +46,8 @@ ul li{
 }
 .list-group-item:first-child {
     border-radius: 0;
+        border-bottom: none;
+
 }
 <<<<<<< HEAD
 /* Bootstrap tweaks */
@@ -113,4 +115,10 @@ p.italic {
 .standardize{
    background-color: transparent;
    border: none;
+}
+
+
+.inline ul li{
+  display: inline;
+  padding: 2em;
 }

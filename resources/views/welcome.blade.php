@@ -2,10 +2,33 @@
 
 @section('content')
 <div class="container">
+  <section class="sogea">
+
+
+  <div class="row">
+      <div class="col-md-12 inline" style="text-align: center;">
+        <ul>
+          <!-- <li>
+          Browse</li>
+          <li> -->
+            <a href="{{ route('getArtists')}}">Arstists</a>
+          </li>
+
+          <li>
+            <a href="{{ route('getSongs')}}">Songs</a>
+          </li>
+
+          <!-- <li>
+            <a href="#">Genres</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
+
           <form class="" action="{{ route('search') }}" method="post">
-                <div class="input-group sogea">
+                <div class="input-group ">
              <input type="text" class="form-control" name="strquery" placeholder="Search for by Song or Artist" required>
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
              <span class="input-group-btn">
@@ -15,7 +38,7 @@
          </form>
         </div>
     </div>
-
+    </section>
     <section class="space">
 
 
@@ -45,11 +68,9 @@
           </div>
           <div class="panel-body no-padding">
             <div classss="list-group ">
-                <a href="#" class="list-group-item">    Some Song- Some guy</a>
-                <a href="#" class="list-group-item">    Some Song- Some guy</a>
-                <a href="#" class="list-group-item">    Some Song- Some guy</a>
-                <a href="#" class="list-group-item">    Some Song- Some guy</a>
-                <a href="#" class="list-group-item">    Some Song- Some guy</a>
+              @foreach( $views as $view)
+                <a href="viewSong/{{ $view ->name }}" class="list-group-item"><strong> {{ $view ->name }}  </strong> by {{ $view ->artist -> name}}</a>
+                @endforeach
               </div>
           </div>
         </div>
@@ -60,15 +81,18 @@
 
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">Learn to play</h3>
+            <h3 class="panel-title">Learn To Play</h3>
           </div>
           <div class="panel-body no-padding ">
             <div class="list-group ">
+                <!-- <a href="#" class="list-group-item">Artists</a>
+                <a href="#" class="list-group-item">Songs</a>
+                <a href="#" class="list-group-item">Genres</a> -->
                 <a href="{{ route('viewChords') }}" class="list-group-item">Chord Diagrams</a>
                 <a href="#" class="list-group-item">Musical Scales</a>
                 <a href="#" class="list-group-item">Tips</a>
                 <a href="#" class="list-group-item">Music Theory</a>
-                <a href="#" class="list-group-item">Find a teacher</a>
+                 <a href="#" class="list-group-item">Find a teacher</a>
               </div>
 
           </div>

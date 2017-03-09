@@ -54,12 +54,26 @@ class contentController extends Controller
               if( !$song){
                 return view('errors.503');
               }
+                  $v = $song->views++;
+                  $song->save();
+
                 return view('pages.songs.viewSong')->with([ 'song' => $song ]);
+    }
+
+    public function getArtists(){
+              $artists = Artist::orderBy('name')->get();
+             return view('pages.viewArtists')->with([ 'artists' => $artists ]);
+    }
+
+    public function getSongs(){
+              $song= Song::with('artist')->orderBy('name')->get();
+             return view('pages.viewSongs')->with([ 'songs' => $song ]);
     }
 
     public function goHome(){
        $songs = Song::with('artist')->orderBy('id', 'desc')->take(5)->get();
-       return view('welcome')->with([ 'songs' => $songs ]);
+       $views = Song::with('artist')->orderBy('views', 'desc')->take(5)->get();
+       return view('welcome')->with([ 'songs' => $songs  , 'views' => $views ]);
     }
 
 }

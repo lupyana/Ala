@@ -55,6 +55,12 @@
                         &nbsp;
                     </ul>
 
+                      <!-- <ul class="nav navbar-nav navbar-left">
+                        <li><a href="#">Artists</a></li>
+                        <li><a href="#">Songs</a></li>
+                        <li><a href="#">Genres</a></li>
+                      </ul> -->
+
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
