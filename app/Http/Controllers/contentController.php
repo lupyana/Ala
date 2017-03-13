@@ -72,6 +72,9 @@ class contentController extends Controller
 
     public function getArtistsdetails($artistName){
             $artists = Artist::with('songs')->where('name', '=', $artistName)->first();
+            if( !$artists){
+              return view('errors.503');
+            }
             return view('pages.viewSongs')->with([ 'songs' => $artists->songs ]);
 
     }
