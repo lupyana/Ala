@@ -5,7 +5,14 @@
     <div class="row">
       <div class="col-lg-12">
           <h2>All Artists</h2>
-        <table class="table table-striped">
+          <div class="panel-body no-padding">
+            <div class="list-group ">
+              @foreach( $artists as $artist)
+                <a href="artists/{{  $artist -> name }}" class="list-group-item"><strong>   {{  $artist -> name }}</a>
+                @endforeach
+              </div>
+          </div>
+        <!-- <table class="table table-striped">
 
               @foreach( $artists as $artist)
                 <tr>
@@ -15,7 +22,7 @@
                 </tr>
 
               @endforeach
-            </table>
+            </table> -->
 
       </div>
 

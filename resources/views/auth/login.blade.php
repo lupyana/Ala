@@ -59,7 +59,17 @@
                                 </a>
                             </div>
                         </div>
+
                     </form>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-8 col-md-offset-4">
+
+
+                    <a class="btn btn-link" href="{{ route('register') }}">
+                        Not a member? Join us
+                    </a>
                 </div>
             </div>
         </div>

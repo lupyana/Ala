@@ -13,11 +13,27 @@ class artistTableSeeder extends Seeder
     public function run()
     {
       $art = new Artist();
+      $art->name ='Maua Sama';
+      $art->save();
+      $s = new Song();
+      $s->name = 'Mahaba Niue';
+      $s->album = '';
+      $s->chords = '[ Intro ]
+                      Bm G D A
+
+                      [ Verse ]
+                      Bm G D A
+
+                      [ Chorous ]
+                      Bm G D A';
+      $art->song()->save($s);
+
+      $art = new Artist();
       $art->name ='Papa wemba';
       $art->save();
       $s = new Song();
       $s->name = 'Show me the way';
-      $s->album = 'album';
+      $s->album = '';
       $s->chords = '[ Intro ]
                       C#m B A B
 
@@ -62,7 +78,7 @@ class artistTableSeeder extends Seeder
             $art->save();
             $s = new Song();
             $s->name = 'Na Gode';
-            $s->album = 'album';
+            $s->album = '';
             $s->chords = '[ Intro ]
                           F   C    Dm   Am
                           Eeh ooh, ooh oo-oh
@@ -184,7 +200,7 @@ class artistTableSeeder extends Seeder
             $art->save();
             $s = new Song();
             $s->name = 'Kuliko Jana';
-            $s->album = 'album';
+            $s->album = '';
             $s->chords = '[ INTRO ]
                             F C G Am  x2
 
@@ -310,5 +326,75 @@ class artistTableSeeder extends Seeder
                             F C G Am';
 
             $art->song()->save($s);
+
+            $s = new Song();
+            $s->name = 'Isabella';
+            $s->album = '';
+            $s->chords = " [ INTRO ]
+                          A maj A maj7 D Dm
+
+                          [VERSE]
+                          A maj                                  A maj7
+                          Hey Isabella Are you gonna come out and dance, with me tonight
+                          D                                   Dm
+                          The stars look beautiful, outside, so so beautiful
+                          A maj                                  A maj7
+                          Tell your mama i said sorry I didn't bring you home early, last time
+                          D                                   Dm
+                          And I was a little tipsy I know she doesn't miss me
+
+                          [PRE-CHORUS]
+                          Bm
+                          So put on those shoes, that I like
+                          E maj
+                          And we'll go, and dance the night
+                          Bm     Em    E maj
+                          away Away, Yeah!!
+
+                          [CHORUS]
+                          D                                        F#m
+                          Because YOLO YOLO You Only Live Once So, and me i wanna have some fun
+                          E                              E
+                          Vunja mifupa kama meno iko Up and away we go
+                          D                                        F#m
+                          And spend all my money on you baby Cause i can't take it with me when am dead
+                          E                               Bm7
+                          So tonight, tonight  We are young, high, and in love
+
+                          [VERSE]
+                          A maj                                  A maj7
+                          Isabella One day I'll be a superstar, we'll go to America
+                          D                      Dm
+                          Big show in a stadium Wuuwuuwuuwuu!!
+                          A maj                         A maj7
+                          Isabella Today we boda boda,tomorrow we
+                          D                   Dm
+                          motorcar         (Nisikilize baby)
+
+                          [PRE-CHORUS]
+                          Bm
+                          So put on the dress that hugs you tight
+                          E maj
+                          And we'll go, and dance the night
+                          Bm     Em    E maj
+                          away Away, Yeah!!
+
+
+                          [CHORUS]
+                          D                                 F#m
+                          YOLO YOLO You Only Live Once So, me i wanna have some fun
+                          E                              E
+                          Vunja mifupa kama meno iko Up and away we go
+                          D                                        F#m
+                          And spend all my money on you baby Cause i can't take it with me when am dead
+                          E                               Bm7
+                          So tonight, tonight  We are young, high, and in love
+
+                            ... x2
+
+                            ";
+
+            $art->song()->save($s);
+
     }
 }

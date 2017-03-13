@@ -16,12 +16,13 @@
   },
   "name": "gita",
   "version": "0.0.5",
-  "description": "Platform to help spread and share musical Literature of African songs.",
+  "description": "Platform for sharing and spreading musical Literature of African songs.",
   "main": "index.js",
   "repository": "https://github.com/lupyana/Gita.git",
-  "author": "Lupyana",
+  "author": "Lupyana Mbembati",
   "license": "MIT",
   "dependencies": {
-    "owl.carousel": "^2.2.0"
+    "owl.carousel": "^2.2.0",
+    "vue-resource": "^1.2.1"
   }
 }
