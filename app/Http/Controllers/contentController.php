@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Chord;
 use App\Artist;
 use App\Song;
+use App\SongRequest;
 
 class contentController extends Controller
 {
@@ -24,8 +25,8 @@ class contentController extends Controller
 
     public function addLesson(Request $request){
       $this -> validate($request, [
-          'artist' => 'required|alpha_dash',
-          'song'   => 'required|alpha_dash',
+          'artist' => 'required',
+          'song'   => 'required',
           // 'chords' => 'required|min:46'
         ]);
             $art = Artist::where('name', '=', $request['artist'])->first();
@@ -38,7 +39,7 @@ class contentController extends Controller
                   $s->name = $request['song'];
                   $s->album = $request['album'];
                   $s->chords = $request['chords'];
-                  $art->song()->save($s);
+                  $art->songs()->save($s);
             }
             else{
                   $s = new Song();
@@ -46,7 +47,7 @@ class contentController extends Controller
                   $s->name = $request['song'];
                   $s->album = $request['album'];
                   $s->chords = $request['chords'];
-                  $art->song()->save($s);
+                  $art->songs()->save($s);
             }
 
           //  return $request['chords'];/
@@ -91,10 +92,18 @@ class contentController extends Controller
 
     public function requestLesson(Request $request){
       $this -> validate($request, [
-          'artist' => 'required|alpha_dash',
-          'song'   => 'required|alpha_dash',
+          'artist' => 'required',
+          'song'   => 'required',
               ]);
-       return view('errors.404');
+
+        $r = new SongRequest();
+        $r->song = $request['song'];
+        $r->artist = $request['artist'];
+        $r->otherArtists = $request['feauteredartists'];
+        $r->album = $request['album'];
+        $r->save();
+
+        return redirect('/')->with('success' , 'Your request has been sent! You will be notified once it has been added!');
     }
 
 }

@@ -16,6 +16,7 @@ return array(
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateRequestsTable' => $baseDir . '/database/migrations/2017_03_12_085822_create_requests_table.php',
     'CreateScalesTable' => $baseDir . '/database/migrations/2017_02_25_081349_create_scales_table.php',
+    'CreateSongRequestsTable' => $baseDir . '/database/migrations/2017_03_14_214143_create_song_requests_table.php',
     'CreateSongsTable' => $baseDir . '/database/migrations/2017_03_07_205434_create_songs_table.php',
     'CreateUserTokensTable' => $baseDir . '/database/migrations/2017_03_06_134440_create_user_tokens_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',

@@ -41,10 +41,10 @@ class welcomeEmail extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('Thank you for joining us!');
+                    ->line('Thank you for joining us!')
                     ->line('You have access to our library.')
                     ->line('We will appreciate contributing knowledge for others to learn whenever you can.')
-                    ->line('Happy Playing')
+                    ->line('Happy Playing');
     }
 
     /**

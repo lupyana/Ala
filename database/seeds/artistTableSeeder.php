@@ -26,7 +26,7 @@ class artistTableSeeder extends Seeder
 
                       [ Chorous ]
                       Bm G D A';
-      $art->song()->save($s);
+      $art->songs()->save($s);
 
       $art = new Artist();
       $art->name ='Papa wemba';
@@ -42,7 +42,7 @@ class artistTableSeeder extends Seeder
 
                       [ Chorous ]
                       C#m B A B';
-      $art->song()->save($s);
+      $art->songs()->save($s);
 
       $art = new Artist();
       $art->name ='Oliver Mtukidzi';
@@ -58,7 +58,7 @@ class artistTableSeeder extends Seeder
 
                       [ Chorous ]
                       C G Am Em F C G C F G ';
-      $art->song()->save($s);
+      $art->songs()->save($s);
 
       $s = new Song();
       $s->name = 'Todi';
@@ -71,7 +71,7 @@ class artistTableSeeder extends Seeder
 
                       [ Chorous ]
                     C G Am7 G';
-      $art->song()->save($s);
+      $art->songs()->save($s);
 
             $art = new Artist();
             $art->name ='Yemi Alade';
@@ -193,7 +193,7 @@ class artistTableSeeder extends Seeder
                           Merci beaucoup bien!
 
                           ';
-            $art->song()->save($s);
+            $art->songs()->save($s);
 
             $art = new Artist();
             $art->name ='Sauti Sol';
@@ -325,7 +325,7 @@ class artistTableSeeder extends Seeder
                             [ OUTRO ]
                             F C G Am';
 
-            $art->song()->save($s);
+            $art->songs()->save($s);
 
             $s = new Song();
             $s->name = 'Isabella';
@@ -394,7 +394,7 @@ class artistTableSeeder extends Seeder
 
                             ";
 
-            $art->song()->save($s);
+            $art->songs()->save($s);
 
     }
 }

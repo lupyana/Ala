@@ -41,7 +41,7 @@ class activationEmail extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('Thank you for joining the Gita Community!');
+                    ->line('Thank you for joining the Gita Community!')
                     ->line('Please click this link to verify your email address')
                     ->action('Verify Account', url('/account/activation/'.$this->token))
                     ->line('Thanks!');
