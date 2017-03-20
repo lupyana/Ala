@@ -81,7 +81,7 @@
 
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">Learn To Play</h3>
+            <h3 class="panel-title">Resources</h3>
           </div>
           <div class="panel-body no-padding ">
             <div class="list-group ">
