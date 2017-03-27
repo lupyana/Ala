@@ -29,16 +29,6 @@ Route::post('/searchResults', [
     'as'   => 'search'
 ]);
 
-Route::get('/requestLesson', function(){
-
-  return view('pages.lessonRequest');
-})->name('requestLesson');
-
-Route::get('/submitLesson', function(){
-  return view('pages.lessonSubmit');
-})->name('submitLesson');
-
-
 Route::get('/viewChords', [
     'uses' => 'contentController@index',
     'as'   => 'viewChords'
@@ -52,31 +42,53 @@ Route::get('/chords', [
 
 Route::get('/account/activation/{token}' , 'accountController@activate');
 
-Route::post('/addLesson', [
-        'uses' => 'contentController@addLesson',
-        'as' => 'addLesson'
-]);
+
 
 Route::get('/viewSong/{songName}' , 'contentController@getSong');
 
-Route::get('/artists' ,[
-    'uses' => 'contentController@getArtists',
-    'as'   => 'getArtists']);
-
-Route::get('/artists/{artistName}' ,[
-      'uses' => 'contentController@getArtistsdetails'
-      ]);
-
-Route::get('artists/viewSong/{songName}' , 'contentController@getSong');
 
 Route::get('/songs' ,[
     'uses' => 'contentController@getSongs',
     'as'   => 'getSongs']);
 
-Route::get('/lessonRequest', function(){
-    if(!Auth::check()) return Redirect::guest('login')->with('error' , 'Please tell me who you are');;
-    return view('pages.lessonRequest');
-  })->name('lessonRequest');
+Route::group(['prefix' => '/lesson'], function(){
+
+      Route::get('/lessonRequest', function(){
+              if(!Auth::check()) return Redirect::guest('login')->with('error' , 'Please tell me who you are');;
+              return view('pages.lessonRequest');
+      })->name('lessonRequest');
+
+      Route::post('/addLesson', [
+              'uses' => 'contentController@addLesson',
+              'as' => 'addLesson'
+      ]);
+
+      Route::get('/requestLesson', function(){
+            return view('pages.lessonRequest');
+      })->name('requestLesson');
+
+      Route::get('/submitLesson', function(){
+            return view('pages.lessonSubmit');
+      })->name('submitLesson');
+
+      Route::get('/lessonRequest', function(){
+            if(!Auth::check()) return Redirect::guest('login')->with('error' , 'Please tell me who you are');;
+            return view('pages.lessonRequest');
+      })->name('lessonRequest');
+});
+
+Route::group(['prefix' => '/artists'], function(){
+
+      Route::get('/' ,[
+          'uses' => 'contentController@getArtists',
+          'as'   => 'getArtists']);
+
+      Route::get('/{artistName}' ,[
+            'uses' => 'contentController@getArtistsdetails'
+            ]);
+      Route::get('/viewSong/{songName}' , 'contentController@getSong');
+
+});
 
 Route::group(['middleware' => 'auth'], function () {
 

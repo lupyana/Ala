@@ -12,7 +12,8 @@ class contentController extends Controller
 {
     public function index()
     {
-      return view('pages.allChords');
+      $chords=  Chord::with('chordtypes')->get();
+      return view('pages.allChords')->with(['chords' => $chords]);
     }
 
     public function getChords(){

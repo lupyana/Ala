@@ -11281,20 +11281,8 @@ var app = new Vue({
     currentComponent: 'Amaj',
     isActive: true,
     hasError: false
-  },
-
-  methods: {
-    say: function say(message) {
-      alert(message);
-    },
-    swapComponent: function swapComponent(component) {
-      this.currentComponent = this.key + component;
-    },
-    swapKey: function swapKey(nkey) {
-      this.key = nkey;
-    }
-
   }
+
 });
 
 /***/ }),
@@ -13046,12 +13034,11 @@ module.exports = function spread(callback) {
         });
 
         console.log('Component mounted.');
-        // Raphael.chord('div1', 'A maj', 1).element.setSize(300, 300)
-        // Raphael.chord('div2', 'A maj', 3).element.setSize(300, 300)
-        // Raphael.chord('div3', 'A maj', 7).element.setSize(300, 300)
-        // Raphael.chord('div4', 'A maj', 5).element.setSize(300, 300)
-        // Raphael.chord('div5', 'A maj', 2).element.setSize(300, 300)
-
+        Raphael.chord('div1', 'A maj', 1).element.setSize(300, 300);
+        Raphael.chord('div2', 'A maj', 3).element.setSize(300, 300);
+        Raphael.chord('div3', 'A maj', 7).element.setSize(300, 300);
+        Raphael.chord('div4', 'A maj', 5).element.setSize(300, 300);
+        Raphael.chord('div5', 'A maj', 2).element.setSize(300, 300);
     },
 
     data: {
@@ -36821,7 +36808,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "panel-title "
   }, [_vm._v("Description")])]), _vm._v(" "), _c('div', {
     staticClass: "panel-body"
-  }, [_c('ul')])]), _vm._v(" "), _c('div', {
+  })]), _vm._v(" "), _c('div', {
     staticClass: "panel panel-default"
   }, [_c('div', {
     staticClass: "panel-heading"

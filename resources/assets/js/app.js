@@ -46,18 +46,18 @@ const app = new Vue({
       hasError: false
     },
 
-    methods: {
-             say: function (message) {
-               alert(message)
-             },
-             swapComponent: function(component)
-            {
-              this.currentComponent = this.key + component;
-            },
-            swapKey: function(nkey)
-           {
-             this.key = nkey;
-           }
-
- }
+ //    methods: {
+ //             say: function (message) {
+ //               alert(message)
+ //             },
+ //             swapComponent: function(component)
+ //            {
+ //              this.currentComponent = this.key + component;
+ //            },
+ //            swapKey: function(nkey)
+ //           {
+ //             this.key = nkey;
+ //           }
+ //
+ // }
 });

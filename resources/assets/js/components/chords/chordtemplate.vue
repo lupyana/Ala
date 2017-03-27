@@ -40,11 +40,11 @@
              <h3 class="panel-title ">Description</h3 >
            </div>
            <div class="panel-body">
-             <ul>
-               <!-- <li>  Notes :   {{ $chords[0]->chordtypes[0]->notes }}</li>
+             <!-- <ul>
+               <li>  Notes :   {{ $chords[0]->chordtypes[0]->notes }}</li>
                <li>  Intervals:   {{ $chords[0]->chordtypes[0]->intervals }}</li>
-               <li>  Other Names:   {{ $chords[0]->chordtypes[0]->othernames }}</li> -->
-             </ul>
+               <li>  Other Names:   {{ $chords[0]->chordtypes[0]->othernames }}</li>
+             </ul> -->
 
            </div>
          </div>
@@ -99,11 +99,11 @@
           });
 
             console.log('Component mounted.')
-            // Raphael.chord('div1', 'A maj', 1).element.setSize(300, 300)
-            // Raphael.chord('div2', 'A maj', 3).element.setSize(300, 300)
-            // Raphael.chord('div3', 'A maj', 7).element.setSize(300, 300)
-            // Raphael.chord('div4', 'A maj', 5).element.setSize(300, 300)
-            // Raphael.chord('div5', 'A maj', 2).element.setSize(300, 300)
+            Raphael.chord('div1', 'A maj', 1).element.setSize(300, 300)
+            Raphael.chord('div2', 'A maj', 3).element.setSize(300, 300)
+            Raphael.chord('div3', 'A maj', 7).element.setSize(300, 300)
+            Raphael.chord('div4', 'A maj', 5).element.setSize(300, 300)
+            Raphael.chord('div5', 'A maj', 2).element.setSize(300, 300)
 
 
         },
