@@ -11275,14 +11275,7 @@ Vue.component('Bmin7', __webpack_require__(58));
 Vue.component('Bmin9', __webpack_require__(59));
 
 var app = new Vue({
-  el: '#app',
-  data: {
-    key: 'A',
-    currentComponent: 'Amaj',
-    isActive: true,
-    hasError: false
-  }
-
+  el: '#app'
 });
 
 /***/ }),

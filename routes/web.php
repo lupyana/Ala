@@ -29,12 +29,6 @@ Route::post('/searchResults', [
     'as'   => 'search'
 ]);
 
-Route::get('/viewChords', [
-    'uses' => 'contentController@index',
-    'as'   => 'viewChords'
-]);
-
-
 Route::get('/chords', [
     'uses' => 'contentController@getChords',
 ]);
@@ -88,6 +82,13 @@ Route::group(['prefix' => '/artists'], function(){
             ]);
       Route::get('/viewSong/{songName}' , 'contentController@getSong');
 
+});
+
+Route::group(['prefix' => '/Chords'], function(){
+      Route::get('/viewChords', [
+          'uses' => 'contentController@index',
+          'as'   => 'viewChords'
+      ]);
 });
 
 Route::group(['middleware' => 'auth'], function () {

@@ -39,25 +39,4 @@ Vue.component('Bmin9', require('./components/chords/Bminor9.vue'));
 
 const app = new Vue({
     el: '#app',
-    data: {
-      key: 'A',
-      currentComponent: 'Amaj',
-      isActive: true,
-      hasError: false
-    },
-
- //    methods: {
- //             say: function (message) {
- //               alert(message)
- //             },
- //             swapComponent: function(component)
- //            {
- //              this.currentComponent = this.key + component;
- //            },
- //            swapKey: function(nkey)
- //           {
- //             this.key = nkey;
- //           }
- //
- // }
 });
