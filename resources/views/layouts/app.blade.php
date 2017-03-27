@@ -30,7 +30,9 @@
     </script>
 </head>
 <body>
+
     <div id="app">
+        <div class="full-height">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -98,6 +100,9 @@
         @yield('content')
     </div>
 
+
+    </div>
+
     <footer>
         <div class="container text-center">
                 Gita &copy; <?php echo date('Y');  ?>
@@ -111,4 +116,5 @@
 
     <script src="{{ asset('js/master.js') }}"></script>
 </body>
+
 </html>

@@ -20,6 +20,7 @@ require('owl.carousel')
 Vue.component('Amaj', require('./components/chords/Amajour.vue'));
 Vue.component('Amaj7', require('./components/chords/Amajour7.vue'));
 Vue.component('Amaj9', require('./components/chords/Amajour9.vue'));
+Vue.component('chordtemplate', require('./components/chords/chordtemplate.vue'));
 
 //A minor Chords
 Vue.component('Amin', require('./components/chords/Aminor.vue'));
@@ -45,18 +46,18 @@ const app = new Vue({
       hasError: false
     },
 
-    methods: {
-             say: function (message) {
-               alert(message)
-             },
-             swapComponent: function(component)
-            {
-              this.currentComponent = this.key + component;
-            },
-            swapKey: function(nkey)
-           {
-             this.key = nkey;
-           }
-
- }
+ //    methods: {
+ //             say: function (message) {
+ //               alert(message)
+ //             },
+ //             swapComponent: function(component)
+ //            {
+ //              this.currentComponent = this.key + component;
+ //            },
+ //            swapKey: function(nkey)
+ //           {
+ //             this.key = nkey;
+ //           }
+ //
+ // }
 });

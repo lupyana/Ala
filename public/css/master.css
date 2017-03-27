@@ -1,3 +1,5 @@
+
+
 .sogea{
   margin-top: 10%;
   margin-bottom:  10%;
@@ -46,7 +48,7 @@ ul li{
 }
 .list-group-item:first-child {
     border-radius: 0;
-        border-bottom: none;
+        /*border-bottom: none;*/
 
 }
 <<<<<<< HEAD
@@ -121,4 +123,56 @@ p.italic {
 .inline ul li{
   display: inline;
   padding: 2em;
+}
+
+
+/*error blades*/
+.full-height {
+  min-height: 100vh;
+
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+
+
+.content {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+      font-weight: 100;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+footer{
+      /*margin-bottom: 22px;*/
+      border-top: 2px solid #d3e0e9; ;
+      padding: 20px;
+      background-color: #fff;
+      color: #636b6f;
+
 }

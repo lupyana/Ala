@@ -6,14 +6,21 @@ use Illuminate\Http\Request;
 use App\Chord;
 use App\Artist;
 use App\Song;
+use App\SongRequest;
 
 class contentController extends Controller
 {
+    public function index()
+    {
+      $chords=  Chord::with('chordtypes')->get();
+      return view('pages.allChords')->with(['chords' => $chords]);
+    }
+
     public function getChords(){
 
       $chords=  Chord::with('chordtypes')->get();
 
-      return view('pages.allChords')->with([ 'chords' => $chords ]);
+      return response()->json($chords);
     }
 
 
@@ -33,7 +40,7 @@ class contentController extends Controller
                   $s->name = $request['song'];
                   $s->album = $request['album'];
                   $s->chords = $request['chords'];
-                  $art->song()->save($s);
+                  $art->songs()->save($s);
             }
             else{
                   $s = new Song();
@@ -41,14 +48,14 @@ class contentController extends Controller
                   $s->name = $request['song'];
                   $s->album = $request['album'];
                   $s->chords = $request['chords'];
-                  $art->song()->save($s);
+                  $art->songs()->save($s);
             }
 
           //  return $request['chords'];/
        return redirect('/')->with('success' , 'Your tab has been added succesfully!');
     }
 
-    public function getSong( Request $request, $song){
+    public function getSong( $song){
 
               $song= Song::with('artist')->where('name', '=', $song)->first();
               if( !$song){
@@ -65,6 +72,14 @@ class contentController extends Controller
              return view('pages.viewArtists')->with([ 'artists' => $artists ]);
     }
 
+    public function getArtistsdetails($artistName){
+            $artists = Artist::with('songs')->where('name', '=', $artistName)->first();
+            if( !$artists){
+              return view('errors.503');
+            }
+            return view('pages.viewSongs')->with([ 'songs' => $artists->songs ]);
+
+    }
     public function getSongs(){
               $song= Song::with('artist')->orderBy('name')->get();
              return view('pages.viewSongs')->with([ 'songs' => $song ]);
@@ -74,6 +89,22 @@ class contentController extends Controller
        $songs = Song::with('artist')->orderBy('id', 'desc')->take(5)->get();
        $views = Song::with('artist')->orderBy('views', 'desc')->take(5)->get();
        return view('welcome')->with([ 'songs' => $songs  , 'views' => $views ]);
+    }
+
+    public function requestLesson(Request $request){
+      $this -> validate($request, [
+          'artist' => 'required',
+          'song'   => 'required',
+              ]);
+
+        $r = new SongRequest();
+        $r->song = $request['song'];
+        $r->artist = $request['artist'];
+        $r->otherArtists = $request['feauteredartists'];
+        $r->album = $request['album'];
+        $r->save();
+
+        return redirect('/')->with('success' , 'Your request has been sent! You will be notified once it has been added!');
     }
 
 }
