@@ -54,7 +54,7 @@ ul li{
 <<<<<<< HEAD
 /* Bootstrap tweaks */
 /*.form-control{
-    border-radius: 0px !important;
+    border-radius: 0px !ant;
 }
 .btn{
     border-radius: 0px !important;
@@ -175,4 +175,23 @@ footer{
       background-color: #fff;
       color: #636b6f;
 
+}
+.chords-sidenav {
+
+}
+
+.chords-sidenav .nav .nav {
+    display: none;
+    padding-bottom: 10px;
+}
+
+h1[id] {
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+.affix {
+    top: 20px;
+    width: 263px;
+    z-index: 999;
 }
