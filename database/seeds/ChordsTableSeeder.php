@@ -64,14 +64,14 @@ class ChordsTableSeeder extends Seeder
 
             ],
             [
-              'name' => 'Major 7',
+              'name' => 'Major7',
               'intervals' => '1 - 3 - 5 - 7',
               'notes' => '',
               'othernames' => '',
               'instrument' => 'Guitar'
             ],
             [
-              'name' => 'Minor 7',
+              'name' => 'Minor7',
               'intervals' => '1 - b3 - 5 - b7',
               'notes' => '',
               'othernames' => '',

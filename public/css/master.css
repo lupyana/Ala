@@ -190,8 +190,17 @@ h1[id] {
     margin-top: 0;
 }
 
+
 .affix {
     top: 20px;
     width: 263px;
     z-index: 999;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .affix {
+ position: static;
+   width: 100%;
+  }
 }

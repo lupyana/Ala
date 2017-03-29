@@ -16,26 +16,7 @@ require('owl.carousel')
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-//A majour Chords
-Vue.component('Amaj', require('./components/chords/Amajour.vue'));
-Vue.component('Amaj7', require('./components/chords/Amajour7.vue'));
-Vue.component('Amaj9', require('./components/chords/Amajour9.vue'));
-Vue.component('chordtemplate', require('./components/chords/chordtemplate.vue'));
 
-//A minor Chords
-Vue.component('Amin', require('./components/chords/Aminor.vue'));
-Vue.component('Amin7', require('./components/chords/Aminor7.vue'));
-Vue.component('Amin9', require('./components/chords/Aminor9.vue'));
-
-//B majour Chords
-Vue.component('Bmaj', require('./components/chords/Bmajour.vue'));
-Vue.component('Bmaj7', require('./components/chords/Bmajour7.vue'));
-Vue.component('Bmaj9', require('./components/chords/Bmajour9.vue'));
-
-//B minor Chords
-Vue.component('Bmin', require('./components/chords/Bminor.vue'));
-Vue.component('Bmin7', require('./components/chords/Bminor7.vue'));
-Vue.component('Bmin9', require('./components/chords/Bminor9.vue'));
 
 const app = new Vue({
     el: '#app',
