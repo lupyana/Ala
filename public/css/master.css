@@ -1,4 +1,6 @@
-
+.chordvie {
+    position: relative;
+}
 
 .sogea{
   margin-top: 10%;
@@ -176,13 +178,21 @@ footer{
       color: #636b6f;
 
 }
-.chords-sidenav {
-
+.chords-sidenav .nav>.active>ul {
+    display: block;
 }
 
 .chords-sidenav .nav .nav {
     display: none;
     padding-bottom: 10px;
+}
+
+.chords-sidenav .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 h1[id] {
