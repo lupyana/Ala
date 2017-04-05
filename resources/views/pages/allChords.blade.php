@@ -1,17 +1,18 @@
 @extends('layouts.chord')
 
 @section('content')
-<div class="container">
+<div class="container" data-spy="scroll" data-target="#myScrollspy" >
     <div class="row">
       <div class="col-lg-3 side-menu">
         <div class="panel panel-default" data-spy="affix" data-offset-top="50">
           <div class="panel-heading">
             <h3 class="panel-title">Type</h3>
           </div>
-          <div class="panel-body chords-sidenav">
+          <div class="panel-body chords-sidenav" >
+            <nav  id="myScrollspy">
             <ul class="nav nav-pills nav-stacked " >
               @foreach( $chords as $chord )
-                <li role="presentation">
+                <li >
                   <a href="#{{ $chord->name }}"  >{{ $chord->name }} Chords</a>
                     <ul class="nav">
                       @foreach( $chord->chordtypes as $chod )
@@ -21,6 +22,7 @@
                 </li>
               @endforeach
             </ul>
+          </nav>
           </div>
         </div>
       </div>

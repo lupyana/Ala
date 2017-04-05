@@ -14,7 +14,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/master.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/owl.theme.default.css') }}" rel="stylesheet">  
+    <link href="{{ asset('css/owl.theme.default.css') }}" rel="stylesheet">
 
     <!-- fav icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
@@ -31,7 +31,7 @@
         ]) !!};
     </script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" >
 
     <div id="app">
         <div class="full-height">
