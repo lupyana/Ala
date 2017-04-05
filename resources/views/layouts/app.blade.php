@@ -110,10 +110,10 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/chord/raphael.js') }}"></script>
-    <script src="{{ asset('js/chord/raphael.chord.js') }}"></script>
+    <!-- <script src="{{ asset('js/chord/raphael.js') }}"></script>
+    <script src="{{ asset('js/chord/raphael.chord.js') }}"></script> -->
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/master.js') }}"></script>
+    <!-- <script src="{{ asset('js/master.js') }}"></script> -->
 </body>
 
 </html>
