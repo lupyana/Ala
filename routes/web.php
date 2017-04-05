@@ -40,6 +40,10 @@ Route::get('/account/activation/{token}' , 'accountController@activate');
 
 Route::get('/viewSong/{songName}' , 'contentController@getSong');
 
+Route::get('/lessonRequest', function(){
+        if(!Auth::check()) return Redirect::guest('login')->with('error' , 'Please tell me who you are');
+        return view('pages.lessonRequest');
+})->name('lessonRequest');
 
 Route::get('/songs' ,[
     'uses' => 'contentController@getSongs',
@@ -47,10 +51,8 @@ Route::get('/songs' ,[
 
 Route::group(['prefix' => '/lesson'], function(){
 
-      Route::get('/lessonRequest', function(){
-              if(!Auth::check()) return Redirect::guest('login')->with('error' , 'Please tell me who you are');;
-              return view('pages.lessonRequest');
-      })->name('lessonRequest');
+
+
 
       Route::post('/addLesson', [
               'uses' => 'contentController@addLesson',
