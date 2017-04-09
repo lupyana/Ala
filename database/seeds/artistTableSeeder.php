@@ -205,31 +205,31 @@ class artistTableSeeder extends Seeder
                             F C G Am  x2
 
                             [CHORUS]
-                            F                       C
+                                              F                       C
                             Bwana ni mwokozi wangu, tena ni kiongozi wangu
                             G                         Am
                             Ananipenda leo kuliko jana
-                            F                       C
+                                              F                       C
                             Baraka zake hazikwishi, si kama binadamu habadiliki
                             G                         Am
                             Ananipenda leo kuliko jana
-                            F                       C
+                                  F             C
                             Kuliko Jana Kuliko Jana
                             G                         Am
                             Yesu nipende leo kuliko jana
-                            F                       C
+                                    F             C
                             Kuliko Jana  Kuliko Jana
                             G                         Am
                             Yesu nipende leo kuliko jana
 
                             [VERSE]
-                            F              C
+                                F              C
                             Nakuomba Mungu awasamehe
                             G                         Am
                             Wangalijua jinsi unavyonipenda mimi wasingenisema
-                            F              C
+                            F                C
                             Na maadui wangu nawaombe
-                            G                         Am
+                            G                          Am
                             maisha marefu wazidi kuona ukinibariki
                             F              C
                             Ujue binadamu ni waajabu sana
@@ -241,83 +241,83 @@ class artistTableSeeder extends Seeder
                             Walimsulubisha Yesu Messiah bila kusita
 
                             [CHORUS]
-                            F                       C
+                                              F                       C
                             Bwana ni mwokozi wangu, tena ni kiongozi wangu
                             G                         Am
                             Ananipenda leo kuliko jana
-                            F                       C
+                                              F                       C
                             Baraka zake hazikwishi, si kama binadamu habadiliki
                             G                         Am
                             Ananipenda leo kuliko jana
-                            F                       C
+                                  F             C
                             Kuliko Jana Kuliko Jana
                             G                         Am
                             Yesu nipende leo kuliko jana
-                            F                       C
+                                    F             C
                             Kuliko Jana  Kuliko Jana
                             G                         Am
                             Yesu nipende leo kuliko jana
 
                             [VERSE]
-                            F                       C
+                                      F                       C
                             Wewe ndio nategemea, Kufa kupona baba nakutegemea
                             G                         Am
                             Chochote kitanikatsia, kuingia mbinguni utaniondolea (oooh oooh yeah)
-                            F                       C
+                                        F                               C
                             Wewe ndio nategemea, (amen) Kufa kupona baba nakutegemea (oh oh)
                             G                         Am
                             Chochote kitanikatsia, kuingia mbinguni utaniondolea (wewe, ndio nategemea)
-                            F                       C
+                                      F                        C
                             Wewe ndio nategemea, Kufa kupona ndio nategemea (Eh bwana)
                             G                         Am
                             Chochote kitanikatsia, kuingia mbinguni utaniondolea (Eh, maisha yangu yote)
-                            F                       C
+                                      F                        C
                             Wewe ndio nategemea, (kwa nguvu zangu zote), kufa kupona baba nakutegemea (nakutegemea)
                             G                         Am
                             Chochote kitanikatsia, kuingia mbinguni utaniondolea (oooooooh)
 
                             [CHORUS]
-                            F                       C
+                                              F                       C
                             Bwana ni mwokozi wangu, tena ni kiongozi wangu
                             G                         Am
                             Ananipenda leo kuliko jana
-                            F                       C
+                                              F                       C
                             Baraka zake hazikwishi, si kama binadamu habadiliki
                             G                         Am
                             Ananipenda leo kuliko jana
-                            F                       C
+                                  F             C
                             Kuliko Jana Kuliko Jana
                             G                         Am
                             Yesu nipende leo kuliko jana
-                            F                       C
+                                    F             C
                             Kuliko Jana  Kuliko Jana
                             G                         Am
                             Yesu nipende leo kuliko jana
 
                             [VERSE]
-                            F                       C
+                                        F                        C
                             Wewe ndio nategemea (wewe), kufa kupona baba nakutegemea (wewe)
                             G                         Am
                             Chochote kitanikatsia (uh-huh), kuingia mbinguni utaniondolea
-                            F                       C
+                                        F                        C
                             Wewe ndio nategemea (oooh), kufa kupona baba nakutegemea (nakutegemea)
                             G                         Am
                             Chochote kitanikatsia kuingia mbinguni utaniondolea
 
                             [CHORUS]
-                            F                       C
+                                              F                       C
                             Bwana ni mwokozi wangu, tena ni kiongozi wangu
                             G                         Am
                             Ananipenda leo kuliko jana
-                            F                       C
+                                              F                       C
                             Baraka zake hazikwishi, si kama binadamu habadiliki
                             G                         Am
                             Ananipenda leo kuliko jana
-                            F                       C
+                                  F             C
                             Kuliko Jana Kuliko Jana
                             G                         Am
                             Yesu nipende leo kuliko jana
-                            F                       C
+                                    F             C
                             Kuliko Jana  Kuliko Jana
                             G                         Am
                             Yesu nipende leo kuliko jana
