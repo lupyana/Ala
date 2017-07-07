@@ -3698,6 +3698,7 @@ class ComposerStaticInitf7919d07b9ef8cbd7fea49ea93ddc973
         'Symfony\\Component\\Yaml\\Yaml' => __DIR__ . '/..' . '/symfony/yaml/Yaml.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Tests\\Browser\\ExampleTest' => __DIR__ . '/../..' . '/tests/Browser/ExampleTest.php',
+        'Tests\\Browser\\LoginTest' => __DIR__ . '/../..' . '/tests/Browser/LoginTest.php',
         'Tests\\Browser\\Pages\\HomePage' => __DIR__ . '/../..' . '/tests/Browser/Pages/HomePage.php',
         'Tests\\Browser\\Pages\\Page' => __DIR__ . '/../..' . '/tests/Browser/Pages/Page.php',
         'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',

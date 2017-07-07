@@ -7,6 +7,7 @@
 
 require('./bootstrap')
 require('owl.carousel')
+require('selectize')
 // require('./chord/raphael');
 // require('./chord/raphael.chord');
 

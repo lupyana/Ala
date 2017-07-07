@@ -14,6 +14,7 @@
 
                     <div class="input-group input-space">
                         <span class="input-group-addon fix-size" id="input_artist">Artist Name  &nbsp;</span>
+                        <!-- <select id="searchbox" name="q" placeholder="Name of Artist" class="form-control"></select> -->
                         <input type="text" class="form-control" placeholder="Name" name="artist" aria-describedby="input_artist" required>
                     </div>
 
@@ -60,5 +61,7 @@
 </div>
 
 </div>
+
+
 
 @endsection

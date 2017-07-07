@@ -3403,6 +3403,7 @@ return array(
     'Symfony\\Component\\Yaml\\Yaml' => $vendorDir . '/symfony/yaml/Yaml.php',
     'Symfony\\Polyfill\\Mbstring\\Mbstring' => $vendorDir . '/symfony/polyfill-mbstring/Mbstring.php',
     'Tests\\Browser\\ExampleTest' => $baseDir . '/tests/Browser/ExampleTest.php',
+    'Tests\\Browser\\LoginTest' => $baseDir . '/tests/Browser/LoginTest.php',
     'Tests\\Browser\\Pages\\HomePage' => $baseDir . '/tests/Browser/Pages/HomePage.php',
     'Tests\\Browser\\Pages\\Page' => $baseDir . '/tests/Browser/Pages/Page.php',
     'Tests\\CreatesApplication' => $baseDir . '/tests/CreatesApplication.php',
