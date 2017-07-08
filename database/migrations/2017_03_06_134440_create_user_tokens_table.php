@@ -18,7 +18,7 @@ class CreateUserTokensTable extends Migration
             $table->integer('user_id')->unsigned()->index();
             $table->string('token', 64);
             $table->tinyInteger('status')->default(0);
-            $table->timestamp('deleted_at');
+            // $table->timestamp('deleted_at')->default(null);
             $table->timestamps();
         });
     }

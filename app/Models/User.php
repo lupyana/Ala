@@ -3,7 +3,7 @@
 namespace App\Models;
 
 use Eloquent as Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+// use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class User
@@ -12,15 +12,15 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class User extends Model
 {
-    use SoftDeletes;
+    // use SoftDeletes;
 
     public $table = 'users';
-    
+
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
 
-    protected $dates = ['deleted_at'];
+    // protected $dates = ['deleted_at'];
 
 
     public $fillable = [
@@ -49,8 +49,8 @@ class User extends Model
      * @var array
      */
     public static $rules = [
-        
+
     ];
 
-    
+
 }
