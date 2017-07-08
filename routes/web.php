@@ -36,8 +36,6 @@ Route::get('/chords', [
 
 Route::get('/account/activation/{token}' , 'accountController@activate');
 
-
-
 Route::get('/viewSong/{songName}' , 'contentController@getSong');
 
 Route::get('/lessonRequest', function(){
