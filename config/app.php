@@ -168,6 +168,9 @@ return [
         \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
         \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
 
+        //trasformer class
+        Spatie\Fractal\FractalServiceProvider::class,
+
         /*
          * Package Service Providers...
          */
@@ -235,6 +238,7 @@ return [
         'Form'      => Collective\Html\FormFacade::class,
         'Html'      => Collective\Html\HtmlFacade::class,
         'Flash'     => Laracasts\Flash\Flash::class,
+          'Fractal' => Spatie\Fractal\FractalFacade::class,
 
 
     ],
