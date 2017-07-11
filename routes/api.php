@@ -19,3 +19,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::resource('users', 'UserAPIController');
+
+Route::resource('songs', 'SongAPIController');
+
+Route::get('Songs/Recents' , 'SongAPIController@recents');
+
+Route::resource('artists', 'ArtistAPIController');
