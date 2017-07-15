@@ -145,7 +145,7 @@ class SongAPIController extends AppBaseController
         // $this->songRepository->pushCriteria(new RequestCriteria($request));
         // $this->songRepository->pushCriteria(new LimitOffsetCriteria($request));
         // $songs = $this->songRepository->orderBy('created_at' , 'desc')->paginate(10);
-        $songs = Song::with('artist')->orderBy('id', 'desc')->take(5)->get();
+        $songs = Song::with('artist')->orderBy('id', 'desc')->take(10)->get();
 
         $manager = new Manager();
 
