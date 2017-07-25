@@ -28,7 +28,9 @@ class SongTransformer extends TransformerAbstract
         return [
           'id' => $song->id,
           'name' => $song->name,
-          'album' => $song->album
+          'album' => $song->album,
+          'chords' => $song->chords,
+          'views' => $song->views
             //
         ];
     }
