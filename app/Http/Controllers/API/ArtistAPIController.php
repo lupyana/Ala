@@ -38,7 +38,7 @@ class ArtistAPIController extends AppBaseController
     {
         $this->artistRepository->pushCriteria(new RequestCriteria($request));
         $this->artistRepository->pushCriteria(new LimitOffsetCriteria($request));
-        $artists = $this->artistRepository->all();
+        $artists = $this->artistRepository->with('songs')->all();
 
         return $this->sendResponse($artists->toArray(), 'Artists retrieved successfully');
     }
