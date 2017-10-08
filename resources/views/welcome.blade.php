@@ -88,11 +88,13 @@
                 <!-- <a href="#" class="list-group-item">Artists</a>
                 <a href="#" class="list-group-item">Songs</a>
                 <a href="#" class="list-group-item">Genres</a> -->
+                <a href="{{ route('lessonRequest') }}" class="list-group-item">Request a Lesson or Tabs</a>
+
                 <a href="{{ route('viewChords') }}" class="list-group-item">Chord Diagrams</a>
-                <a href="#" class="list-group-item">Musical Scales</a>
-                <a href="#" class="list-group-item">Tips</a>
-                <a href="#" class="list-group-item">Music Theory</a>
-                 <a href="#" class="list-group-item">Find a teacher</a>
+                <a href="{{ route('comingSoon')}}" class="list-group-item">Musical Scales</a>
+                <a href="{{ route('comingSoon')}}" class="list-group-item">Tips</a>
+                <a href="{{ route('comingSoon')}}" class="list-group-item">Music Theory</a>
+
               </div>
 
           </div>
@@ -111,7 +113,7 @@
             <ul>
               <a href="{{ route('lessonRequest') }}"><li>Request a Lesson or Tabs</li></a>
             <!-- <a href="#">  <li>Submit a Tab</li></a> -->
-             <a href="{{ route('submitLesson') }}"><li>Submit a Lesson</li></a>
+             <!-- <a href="{{ route('submitLesson') }}"><li>Submit a Lesson</li></a> -->
             </ul>
           </div>
         </div>

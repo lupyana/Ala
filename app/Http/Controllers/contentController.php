@@ -89,12 +89,15 @@ class contentController extends Controller
        $songs = Song::with('artist')->orderBy('id', 'desc')->take(5)->get();
        $views = Song::with('artist')->orderBy('views', 'desc')->take(5)->get();
        return view('welcome')->with([ 'songs' => $songs  , 'views' => $views ]);
+      // return view('pages.admin.index')->with([ 'songs' => $songs  , 'views' => $views ]);
     }
 
     public function requestLesson(Request $request){
       $this -> validate($request, [
           'artist' => 'required',
           'song'   => 'required',
+          'email' => 'required|email',
+          'name' => 'required'
               ]);
 
         $r = new SongRequest();
@@ -102,6 +105,8 @@ class contentController extends Controller
         $r->artist = $request['artist'];
         $r->otherArtists = $request['feauteredartists'];
         $r->album = $request['album'];
+        $r->requested_by = $request['name'];
+        $r->email = $request['email'];
         $r->save();
 
         return redirect('/')->with('success' , 'Your request has been sent! You will be notified once it has been added!');
