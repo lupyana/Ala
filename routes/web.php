@@ -18,6 +18,11 @@ Route::get('/', [
 
 Auth::routes();
 
+Route::get('/commingSoon' ,function(){
+  return view('pages.commingSoon');
+
+})->name('comingSoon');
+
 Route::get('/home', 'HomeController@index');
 
 // Route::get('/searchResults', function(){
@@ -39,7 +44,7 @@ Route::get('/account/activation/{token}' , 'accountController@activate');
 Route::get('/viewSong/{songName}' , 'contentController@getSong');
 
 Route::get('/lessonRequest', function(){
-        if(!Auth::check()) return Redirect::guest('login')->with('error' , 'Please tell me who you are');
+        // if(!Auth::check()) return Redirect::guest('login')->with('error' , 'Please tell me who you are');
         return view('pages.lessonRequest');
 })->name('lessonRequest');
 
@@ -91,9 +96,11 @@ Route::group(['prefix' => '/Chords'], function(){
       ]);
 });
 
+Route::post('/lessonRequest' ,[
+    'uses' => 'contentController@requestLesson',
+    'as'   => 'lessonRequest']);
+
 Route::group(['middleware' => 'auth'], function () {
 
-  Route::post('/lessonRequest' ,[
-      'uses' => 'contentController@requestLesson',
-      'as'   => 'lessonRequest']);
+
 });

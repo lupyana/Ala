@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Gita',
+    'name' => 'ala',
 
     /*
     |--------------------------------------------------------------------------
@@ -166,7 +166,7 @@ return [
         Laracasts\Flash\FlashServiceProvider::class,
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
-      
+
 
         //trasformer class
         Spatie\Fractal\FractalServiceProvider::class,

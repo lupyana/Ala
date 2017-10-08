@@ -153,7 +153,7 @@ p.italic {
 }
 
 .title {
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .links > a {
@@ -213,4 +213,13 @@ h1[id] {
  position: static;
    width: 100%;
   }
+}
+
+
+.admin-content{
+  text-align: left;
+}
+
+.product-info .label{
+  color: #000;
 }

@@ -6,7 +6,7 @@
 
 <div class="row">
   <div class="col-lg-12 col-md-12 col-sm-12">
-    <p class="lead"> Request a Lesson</p>
+    <p class="lead"> Request tabs for a song</p>
         <form class="" action="{{ route('lessonRequest')}}" method="post">
         <div class="panel panel-default">
               <div class="panel-heading"> <h3 class="panel-title">Required Information: </h3></div>
@@ -33,6 +33,25 @@
                     </div>
 
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                  </div>
+        </div>
+
+        <div class="panel panel-default">
+              <div class="panel-heading"> <h3 class="panel-title">Contact Information for notification:</h3></div>
+                  <div class="panel-body">
+
+                    <div class="input-group input-space">
+                        <span class="input-group-addon fix-size" id="input_name">Your Name &nbsp;</span>
+                        <input type="text" class="form-control" placeholder="Your name " name="name" aria-describedby="input_name" required>
+                    </div>
+
+                    <div class="input-group input-space">
+                        <span class="input-group-addon fix-size" id="input_email">Your Email  &nbsp;</span>
+                        <input type="text" class="form-control" placeholder="Email"  name="email" aria-describedby="input_email" required>
+                    </div>
+
+
 
                   </div>
         </div>
