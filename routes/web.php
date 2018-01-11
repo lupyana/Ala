@@ -55,8 +55,6 @@ Route::get('/songs' ,[
 Route::group(['prefix' => '/lesson'], function(){
 
 
-
-
       Route::post('/addLesson', [
               'uses' => 'contentController@addLesson',
               'as' => 'addLesson'
